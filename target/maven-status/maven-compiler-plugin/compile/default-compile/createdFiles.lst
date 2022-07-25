@@ -1,0 +1,12 @@
+com\payroll\BaseClass\BaseClass.class
+com\payroll\PageObjects\LoginPage.class
+com\payroll\Utilities\Log.class
+com\payroll\PageObjects\HomePage.class
+com\payroll\PageObjects\Workers.class
+com\payroll\Utilities\Listeners.class
+com\payroll\PageObjects\BankDetailsPage.class
+com\payroll\PageObjects\CreateWorker.class
+com\payroll\PageObjects\PasswordReset.class
+com\payroll\Utilities\Excel.class
+com\payroll\Utilities\ExtentReport.class
+com\payroll\Actions\Action.class

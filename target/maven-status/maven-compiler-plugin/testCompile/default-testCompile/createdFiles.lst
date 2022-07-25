@@ -1,0 +1,4 @@
+TestCases\CreateWorkerTest.class
+TestCases\LoginTest.class
+TestCases\WorkerTest.class
+TestCases\InvalidLoginTest.class
