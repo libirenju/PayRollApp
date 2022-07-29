@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 77.894 s <<< FAILURE! - in TestSuite
-TestCases.LoginTest.invalidEmail  Time elapsed: 1.186 s  <<< FAILURE!
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 61.478 s <<< FAILURE! - in TestSuite
+TestCases.LoginTest.invalidEmail  Time elapsed: 1.029 s  <<< FAILURE!
 java.lang.AssertionError: expected [Email is not a valid email address.] but found []
 	at TestCases.LoginTest.invalidEmail(LoginTest.java:97)
 
-TestCases.LoginTest.blankEmail  Time elapsed: 1.319 s  <<< FAILURE!
+TestCases.LoginTest.blankEmail  Time elapsed: 1.038 s  <<< FAILURE!
 java.lang.AssertionError: expected [Email cannot be blank.] but found []
 	at TestCases.LoginTest.blankEmail(LoginTest.java:110)
 
-TestCases.LoginTest.invalidEmail1  Time elapsed: 1.233 s  <<< FAILURE!
+TestCases.LoginTest.invalidEmail1  Time elapsed: 0.968 s  <<< FAILURE!
 java.lang.AssertionError: expected [There is no user with this email address.] but found []
 	at TestCases.LoginTest.invalidEmail1(LoginTest.java:123)
 

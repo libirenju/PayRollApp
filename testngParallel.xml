@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
-  <test thread-count="5" parallel="classes" name="Test">
-    <classes>
-      <class name="TestCases.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" parallel="classes">
+	<listeners>
+		<listener class-name="com.payroll.Utilities.Listeners" />
+	</listeners>
+
+	<parameter name="uname" value="   " />
+	<parameter name="pwd" value="Selenium@123" />
+	<parameter name="uname1" value="carol" />
+	<parameter name="pwd1" value="     " />
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="TestCases.LoginTest" />
+			<class name="TestCases.InvalidLoginTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

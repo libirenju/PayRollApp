@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="2" total="13" passed="8">
+<testng-results ignored="2" total="13" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="76331" started-at="2022-07-23T21:31:40 IST" finished-at="2022-07-23T21:32:56 IST">
+  <suite started-at="2022-07-20T22:23:41 IST" name="Suite" finished-at="2022-07-20T22:24:41 IST" duration-ms="60240">
     <groups>
+      <group name="Regression">
+        <method signature="LoginTest.validLogin()[pri:1, instance:TestCases.LoginTest@4b0d79fc]" name="validLogin" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.cancelButton()[pri:7, instance:TestCases.LoginTest@4b0d79fc]" name="cancelButton" class="TestCases.LoginTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Test" duration-ms="76331" started-at="2022-07-23T21:31:40 IST" finished-at="2022-07-23T21:32:56 IST">
+    <test started-at="2022-07-20T22:23:41 IST" name="Test" finished-at="2022-07-20T22:24:41 IST" duration-ms="60240">
       <class name="TestCases.InvalidLoginTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="start" is-config="true" duration-ms="4381" started-at="2022-07-23T21:32:39 IST" finished-at="2022-07-23T21:32:43 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:28 IST" name="start" finished-at="2022-07-20T22:24:32 IST" duration-ms="3358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="invalidCredentials(java.lang.String,java.lang.String)[pri:1, instance:TestCases.InvalidLoginTest@e720b71]" name="invalidCredentials" duration-ms="1170" started-at="2022-07-23T21:32:43 IST" data-provider="getData" finished-at="2022-07-23T21:32:44 IST">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:1, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:32 IST" name="invalidCredentials" data-provider="getData" finished-at="2022-07-20T22:24:33 IST" duration-ms="1043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +31,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="close" is-config="true" duration-ms="48" started-at="2022-07-23T21:32:44 IST" finished-at="2022-07-23T21:32:44 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:33 IST" name="close" finished-at="2022-07-20T22:24:33 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="start" is-config="true" duration-ms="4613" started-at="2022-07-23T21:32:44 IST" finished-at="2022-07-23T21:32:49 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:33 IST" name="start" finished-at="2022-07-20T22:24:36 IST" duration-ms="3320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="blankUsername(java.lang.String,java.lang.String)[pri:2, instance:TestCases.InvalidLoginTest@e720b71]" name="blankUsername" duration-ms="989" started-at="2022-07-23T21:32:49 IST" finished-at="2022-07-23T21:32:50 IST">
+        <test-method signature="blankUsername(java.lang.String,java.lang.String)[pri:2, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:36 IST" name="blankUsername" finished-at="2022-07-20T22:24:37 IST" duration-ms="951" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +55,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankUsername -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="close" is-config="true" duration-ms="74" started-at="2022-07-23T21:32:50 IST" finished-at="2022-07-23T21:32:50 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:37 IST" name="close" finished-at="2022-07-20T22:24:37 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="start" is-config="true" duration-ms="4685" started-at="2022-07-23T21:32:50 IST" finished-at="2022-07-23T21:32:55 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:37 IST" name="start" finished-at="2022-07-20T22:24:40 IST" duration-ms="3285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="blankPassword(java.lang.String,java.lang.String)[pri:3, instance:TestCases.InvalidLoginTest@e720b71]" name="blankPassword" duration-ms="1254" started-at="2022-07-23T21:32:55 IST" finished-at="2022-07-23T21:32:56 IST">
+        <test-method signature="blankPassword(java.lang.String,java.lang.String)[pri:3, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:40 IST" name="blankPassword" finished-at="2022-07-20T22:24:41 IST" duration-ms="907" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,57 +79,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankPassword -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@e720b71]" name="close" is-config="true" duration-ms="69" started-at="2022-07-23T21:32:56 IST" finished-at="2022-07-23T21:32:56 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.InvalidLoginTest@48aca48b]" started-at="2022-07-20T22:24:41 IST" name="close" finished-at="2022-07-20T22:24:41 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- TestCases.InvalidLoginTest -->
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="loadConfig()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="loadConfig" is-config="true" duration-ms="222" started-at="2022-07-23T21:31:39 IST" finished-at="2022-07-23T21:31:40 IST">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:41 IST" name="loadConfig" finished-at="2022-07-20T22:23:41 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="8448" started-at="2022-07-23T21:31:40 IST" finished-at="2022-07-23T21:31:48 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:41 IST" name="start" finished-at="2022-07-20T22:23:50 IST" duration-ms="8727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="validLogin()[pri:1, instance:TestCases.LoginTest@6121c9d6]" name="validLogin" duration-ms="4137" started-at="2022-07-23T21:31:48 IST" finished-at="2022-07-23T21:31:52 IST">
+        <test-method signature="validLogin()[pri:1, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:50 IST" name="validLogin" finished-at="2022-07-20T22:23:53 IST" duration-ms="3556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="125" started-at="2022-07-23T21:31:52 IST" finished-at="2022-07-23T21:31:52 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:53 IST" name="close" finished-at="2022-07-20T22:23:53 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="5107" started-at="2022-07-23T21:31:52 IST" finished-at="2022-07-23T21:31:57 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:53 IST" name="start" finished-at="2022-07-20T22:23:58 IST" duration-ms="5039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="accessPassLink()[pri:2, instance:TestCases.LoginTest@6121c9d6]" name="accessPassLink" duration-ms="1033" started-at="2022-07-23T21:31:57 IST" finished-at="2022-07-23T21:31:58 IST">
+        <test-method signature="accessPassLink()[pri:2, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:58 IST" name="accessPassLink" finished-at="2022-07-20T22:23:59 IST" duration-ms="779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accessPassLink -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="58" started-at="2022-07-23T21:31:58 IST" finished-at="2022-07-23T21:31:58 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:59 IST" name="close" finished-at="2022-07-20T22:23:59 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="7923" started-at="2022-07-23T21:31:58 IST" finished-at="2022-07-23T21:32:06 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:23:59 IST" name="start" finished-at="2022-07-20T22:24:04 IST" duration-ms="4272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="accessEmailField()[pri:3, instance:TestCases.LoginTest@6121c9d6]" name="accessEmailField" duration-ms="1053" started-at="2022-07-23T21:32:06 IST" finished-at="2022-07-23T21:32:07 IST">
+        <test-method signature="accessEmailField()[pri:3, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:04 IST" name="accessEmailField" finished-at="2022-07-20T22:24:04 IST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accessEmailField -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="59" started-at="2022-07-23T21:32:07 IST" finished-at="2022-07-23T21:32:08 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:04 IST" name="close" finished-at="2022-07-20T22:24:04 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="6066" started-at="2022-07-23T21:32:08 IST" finished-at="2022-07-23T21:32:14 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:04 IST" name="start" finished-at="2022-07-20T22:24:08 IST" duration-ms="3365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="FAIL" signature="invalidEmail()[pri:4, instance:TestCases.LoginTest@6121c9d6]" name="invalidEmail" duration-ms="1175" started-at="2022-07-23T21:32:14 IST" finished-at="2022-07-23T21:32:15 IST">
+        <test-method signature="invalidEmail()[pri:4, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:08 IST" name="invalidEmail" finished-at="2022-07-20T22:24:09 IST" duration-ms="1011" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Email is not a valid email address.] but found []]]>
@@ -139,10 +143,10 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
 at TestCases.LoginTest.invalidEmail(LoginTest.java:97)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
@@ -151,7 +155,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:808)
 at org.testng.TestRunner.run(TestRunner.java:603)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
@@ -177,15 +181,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="64" started-at="2022-07-23T21:32:15 IST" finished-at="2022-07-23T21:32:15 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:09 IST" name="close" finished-at="2022-07-20T22:24:09 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="4534" started-at="2022-07-23T21:32:15 IST" finished-at="2022-07-23T21:32:19 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:09 IST" name="start" finished-at="2022-07-20T22:24:12 IST" duration-ms="3492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="FAIL" signature="blankEmail()[pri:5, instance:TestCases.LoginTest@6121c9d6]" name="blankEmail" duration-ms="1328" started-at="2022-07-23T21:32:19 IST" finished-at="2022-07-23T21:32:21 IST">
+        <test-method signature="blankEmail()[pri:5, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:12 IST" name="blankEmail" finished-at="2022-07-20T22:24:13 IST" duration-ms="1037" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Email cannot be blank.] but found []]]>
@@ -199,10 +203,10 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
 at TestCases.LoginTest.blankEmail(LoginTest.java:110)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
@@ -211,7 +215,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:808)
 at org.testng.TestRunner.run(TestRunner.java:603)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
@@ -237,15 +241,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankEmail -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="118" started-at="2022-07-23T21:32:21 IST" finished-at="2022-07-23T21:32:21 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:13 IST" name="close" finished-at="2022-07-20T22:24:14 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="4721" started-at="2022-07-23T21:32:21 IST" finished-at="2022-07-23T21:32:26 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:14 IST" name="start" finished-at="2022-07-20T22:24:17 IST" duration-ms="3321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="FAIL" signature="invalidEmail1()[pri:6, instance:TestCases.LoginTest@6121c9d6]" name="invalidEmail1" duration-ms="1233" started-at="2022-07-23T21:32:26 IST" finished-at="2022-07-23T21:32:27 IST">
+        <test-method signature="invalidEmail1()[pri:6, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:17 IST" name="invalidEmail1" finished-at="2022-07-20T22:24:18 IST" duration-ms="968" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [There is no user with this email address.] but found []]]>
@@ -259,10 +263,10 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
 at TestCases.LoginTest.invalidEmail1(LoginTest.java:123)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
@@ -271,7 +275,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:808)
 at org.testng.TestRunner.run(TestRunner.java:603)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
@@ -297,35 +301,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail1 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="84" started-at="2022-07-23T21:32:27 IST" finished-at="2022-07-23T21:32:27 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:18 IST" name="close" finished-at="2022-07-20T22:24:18 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="4667" started-at="2022-07-23T21:32:27 IST" finished-at="2022-07-23T21:32:32 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:18 IST" name="start" finished-at="2022-07-20T22:24:23 IST" duration-ms="5369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="cancelButton()[pri:7, instance:TestCases.LoginTest@6121c9d6]" name="cancelButton" duration-ms="1500" started-at="2022-07-23T21:32:32 IST" finished-at="2022-07-23T21:32:33 IST">
+        <test-method signature="cancelButton()[pri:7, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:23 IST" name="cancelButton" finished-at="2022-07-20T22:24:24 IST" duration-ms="1248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cancelButton -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="55" started-at="2022-07-23T21:32:33 IST" finished-at="2022-07-23T21:32:33 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:24 IST" name="close" finished-at="2022-07-20T22:24:25 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="start" is-config="true" duration-ms="5310" started-at="2022-07-23T21:32:33 IST" finished-at="2022-07-23T21:32:38 IST">
+        <test-method is-config="true" signature="start()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:25 IST" name="start" finished-at="2022-07-20T22:24:28 IST" duration-ms="3589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="rememberme()[pri:8, instance:TestCases.LoginTest@6121c9d6]" name="rememberme" duration-ms="104" started-at="2022-07-23T21:32:38 IST" finished-at="2022-07-23T21:32:38 IST">
+        <test-method signature="rememberme()[pri:8, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:28 IST" name="rememberme" finished-at="2022-07-20T22:24:28 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rememberme -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="close" is-config="true" duration-ms="70" started-at="2022-07-23T21:32:38 IST" finished-at="2022-07-23T21:32:39 IST">
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:28 IST" name="close" finished-at="2022-07-20T22:24:28 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="End()[pri:0, instance:TestCases.LoginTest@6121c9d6]" name="End" is-config="true" duration-ms="378" started-at="2022-07-23T21:32:56 IST" finished-at="2022-07-23T21:32:56 IST">
+        <test-method is-config="true" signature="End()[pri:0, instance:TestCases.LoginTest@4b0d79fc]" started-at="2022-07-20T22:24:41 IST" name="End" finished-at="2022-07-20T22:24:42 IST" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- End -->

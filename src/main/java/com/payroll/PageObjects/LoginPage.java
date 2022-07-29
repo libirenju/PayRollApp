@@ -15,6 +15,7 @@ public class LoginPage extends BaseClass
 {
 	WebDriver driver;
 	Action act=new Action();
+	HomePage hp = new HomePage(driver);
 	static Excel ex = new Excel();
 	
 	public LoginPage(WebDriver driver)
@@ -94,6 +95,7 @@ public class LoginPage extends BaseClass
 		act.type(usernme,username);
 		act.type(passwrd,password);
 		act.click(driver, loginbutton);
+		//act.explicitWait(getDriver(), hp.Hlogo(), 10);
 	}
 	
 	public String loginLogo()
@@ -104,25 +106,29 @@ public class LoginPage extends BaseClass
 	
 	public boolean checkbox()
 	{
+		act.explicitWait(driver, rememberme, 20);
 		boolean value = act.isEnabled(driver,rememberme());
 		return value;
 	}
 	
-	public String alertMsg()
+	public String invalidUsernamePasswrdAlertMsg()
 	{
-		String alert = alertmsg().getText();
-		return alert;
+		act.explicitWait(getDriver(), invalidalert, 10);
+		String invalidAlert = alertmsg().getText();
+		return invalidAlert;
 	}
 	
-	public String userAlertMsg()
+	public String blankUserAlertMsg()
 	{
-		String alert = ualert().getText();
-		return alert;
+		act.explicitWait(getDriver(), useralert, 10);
+		String usernameAlert = ualert().getText();
+		return usernameAlert;
 	}
 	
-	public String passAlertMsg()
+	public String blankPasswrdAlertMsg()
 	{
-		String alert = palert().getText();
-		return alert;
+		act.explicitWait(getDriver(), passalert, 10);
+		String passwordAlert = palert().getText();
+		return passwordAlert;
 	}
 }

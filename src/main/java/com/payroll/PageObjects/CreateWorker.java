@@ -86,6 +86,9 @@ public class CreateWorker
 	@FindBy(xpath="//td[text()='5']")
 	WebElement date;
 	
+	@FindBy(xpath="//div[text()='Last Name cannot be blank.']")
+	WebElement lnamealert;
+	
 			
 		public WebElement Clogo()
 		{
@@ -194,4 +197,15 @@ public class CreateWorker
 			return date;
 		}
 	
+		public WebElement Clnamealert()
+		{
+			return lnamealert;
+		}
+		
+		public String lnameAlertMsg()
+		{
+			String alert = lnamealert.getText();
+			return alert;
+		}
+		
 }

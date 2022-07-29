@@ -3,18 +3,9 @@ package TestCases;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.payroll.Actions.Action;
 import com.payroll.BaseClass.BaseClass;
 import com.payroll.PageObjects.HomePage;
 import com.payroll.PageObjects.LoginPage;
@@ -24,32 +15,14 @@ import com.payroll.Utilities.Log;
 
 public class LoginTest extends BaseClass
 {
-	LoginPage lp;
-	Action act;
-	HomePage hp;
-	Excel ex; PasswordReset pr;
-	
-	@BeforeMethod
-	public void start()
-	{
-		launchApp();
-		
-		act = new Action();
-		hp = new  HomePage(driver);
-		lp = new LoginPage(driver);
-		ex = new Excel();
-		pr = new PasswordReset(driver);
-	}
-	
-	  @Test(priority=1) 
-	  public void validLogin() throws Exception 
+	  @Test(groups= {"Regression"},priority=1) 
+	  public void isValidCredentialsWorking() throws Exception 
 	  { 	
 		  Log.startTestCase("Login To PayRoll App");
-		  String username=ex.readStringData(1,0,"Login");	//username from excelfile
-		  String password=ex.readStringData(1,1,"Login");	//password from excelfile
+		  String username=Excel.readStringData(1,0,"Login");	
+		  String password=Excel.readStringData(1,1,"Login");
 		  Log.info("Going to Enter user credentials");
 		  lp.login(username,password);
-		  //act.explicitWait(driver, hp.Hlogo(), 10); 
 		  String expected ="PAYROLL APPLICATION"; 
 		  String actual = hp.homeLogo();
 		  assertEquals(actual, expected);
@@ -60,76 +33,80 @@ public class LoginTest extends BaseClass
 	  }
 	  
 		@Test(priority = 2)
-		public void accessPassLink() 
+		public void iaPasswordRestLinkAccessible() 
 		{
 			Log.startTestCase("Access Password Reset Link");
-			act.click(driver, lp.resetit());
-			act.explicitWait(driver, pr.Passlogo(), 10);
+			act.click(getDriver(), lp.resetit());
 			String expected = "Password Reset";
-			String actual = pr.passLogo();
+			String actual = pr.passwordPageLogo();
 			assertEquals(actual, expected);
 			Log.endTestCase("Password Reset Page got loaded and assertion done");
 		}
 
 		@Test(priority = 3)
-		public void accessEmailField() 
+		public void isEmailFieldAccessible() 
 		{
 			Log.startTestCase("Check is email field accessible");
-			act.click(driver, lp.resetit());
+			act.click(getDriver(), lp.resetit());
 			act.type(pr.Passemail(), "renju");
 			Log.info("Clicked and Entered email");
-			act.explicitWait(driver, pr.Passlogo(), 10);
 			String expected = "Password Reset";
-			String actual = pr.passLogo();
+			String actual = pr.passwordPageLogo();
 			assertEquals(actual, expected);
 			Log.endTestCase("Able to enter value in email textfield and assertion done");
 		}
 
 		@Test(priority = 4)
-		public void invalidEmail()
+		public void isAlertShownForNotAEmail() throws IOException
 		{
-			act.click(driver, lp.resetit());
-			act.type(pr.Passemail(), "renju");
-			act.click(driver, pr.Psend());
-			act.explicitWait(driver, pr.Psend(), 10);
+			Log.startTestCase("Check alert is shown for not a valid email");
+			act.click(getDriver(), lp.resetit());
+			String email = Excel.readStringData(1,0,"PassReset");
+			act.type(pr.Passemail(),email);
+			Log.info("Clicked and Entered an invalid email");
+			act.click(getDriver(), pr.Psend());
 			String expected = "Email is not a valid email address.";
-			String actual = pr.invalidmail().getText();
+			String actual = pr.isNotAValidEmailAlert();
 			assertEquals(actual, expected);
+			Log.endTestCase("Alert is shown and assertion done");
 		}
 
 		@Test(priority = 5)
-		public void blankEmail()
+		public void isAlertShownForBlankEmail()
 		{
-			act.click(driver, lp.resetit());
+			Log.startTestCase("Check alert is shown when email field is blank");
+			act.click(getDriver(), lp.resetit());
 			act.type(pr.Passemail(), "  ");
-			act.click(driver, pr.Psend());
-			act.explicitWait(driver, pr.Passlogo(), 10);
+			Log.info("Entered as blank email");
+			act.click(getDriver(), pr.Psend());
 			String expected = "Email cannot be blank.";
-			String actual = pr.invalidmail().getText();
-			System.out.println(actual);
+			String actual = pr.isNotAValidEmailAlert();
 			assertEquals(actual, expected);
+			Log.endTestCase("Alert is shown and assertion done");
 		}
 
 		@Test(priority = 6)
-		public void invalidEmail1() 
+		public void isAlertShownForEmail() throws IOException 
 		{
-			act.click(driver, lp.resetit());
-			pr.Passemail().click();
-			pr.Passemail().sendKeys("renju@gmail.com");
-			pr.Psend().click();
-			act.explicitWait(driver, pr.Passlogo(), 10);
+			Log.startTestCase("Check alert is shown when email field is blank");
+			act.click(getDriver(), lp.resetit());
+			act.click(getDriver(), pr.Passemail());
+			String email = Excel.readStringData(2,0,"PassReset");
+			act.type(pr.Passemail(), email);
+			Log.info("Entered as email not available in database");
+			act.click(getDriver(), pr.Psend());
 			String expected = "There is no user with this email address.";
-			String actual = pr.invalidmail().getText();
+			String actual = pr.isNotAValidEmailAlert();
 			assertEquals(actual, expected);
+			Log.endTestCase("Alert is shown and assertion done");
 		}
 
-		@Test(priority = 7)
-		public void cancelButton() 
+		@Test(groups= {"Regression"},priority = 7)
+		public void isCancelButtonWorking() 
 		{
 			Log.startTestCase("Check whether cancel button working in reset page");
-			act.click(driver, lp.resetit());
-			act.click(driver, pr.Pcancel());
-			act.explicitWait(driver, lp.loginlogo(), 10);
+			act.click(getDriver(), lp.resetit());
+			act.click(getDriver(), pr.Pcancel());
 			String expected = "Login";
 			String actual = lp.loginLogo();
 			assertEquals(actual, expected);
@@ -137,21 +114,25 @@ public class LoginTest extends BaseClass
 		}
 
 		@Test(priority = 8)
-		public void rememberme() 
+		public void isRemembermeCheckboxEnabled() 
 		{
 			Log.startTestCase("Check whether remember me checkbox is enable");
-			act.explicitWait(driver, lp.loginlogo(), 10);
 			boolean expected = true;
 			boolean actual = lp.checkbox();
 			assertEquals(actual, expected);
 			Log.endTestCase("Remember me checkbox is enable and assertion done");
 		}
 
-		
-		@AfterMethod
-		public void close() 
+		@Test(priority = 9)
+		public void isRemembermeCheckboxDisabled() 
 		{
-			driver.close();
+			Log.startTestCase("Check whether remember me checkbox can be disabled");
+			act.click(getDriver(), lp.rememberme());
+			boolean expected = false;
+			boolean actual = lp.checkbox();
+			assertEquals(actual, expected);
+			Log.endTestCase("Remember me checkbox getting disabled and assertion done");
 		}
-		 
+
+				 
 }

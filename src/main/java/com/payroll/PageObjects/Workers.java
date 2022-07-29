@@ -22,10 +22,10 @@ public class Workers extends BaseClass
 	@FindBy(xpath="//a[@href='/payrollapp/worker/create']")
 	WebElement createworker;
 	
-	@FindBy(linkText ="Search")
+	@FindBy(xpath = "//button[text()='Search']")
 	WebElement search;
 	
-	@FindBy(linkText="reset")
+	@FindBy(xpath="//button[text()='Reset']")
 	WebElement reset;
 	
 	@FindBy(xpath="//span[@class='glyphicon glyphicon-eye-open']//parent::a[@href='/payrollapp/worker/view?id=2']")
@@ -57,6 +57,9 @@ public class Workers extends BaseClass
 	
 	@FindBy(xpath="//a[@data-sort='employment_type']")
 	WebElement emptypesort;
+	
+	@FindBy(xpath="(//td[text()='Aby']) [1]")
+	WebElement worksearchvalue;
 	
 	public WebElement Wlogo()
 	{
@@ -110,5 +113,23 @@ public class Workers extends BaseClass
 	{
 		return pagination;
 	}
+	
+	public String ViewFunctionTitle()
+	{
+		String titletext=worklogo.getText();
+		return titletext;
+	}
+	
+	public WebElement workerSearchValue()
+	{
+		return worksearchvalue;
+	} 
+	
+	public String searchValueText()
+	{
+		String value = worksearchvalue.getText();
+		return value;
+	}
+	
 	
 }

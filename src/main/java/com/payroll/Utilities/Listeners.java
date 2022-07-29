@@ -1,13 +1,17 @@
 package com.payroll.Utilities;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.payroll.Actions.Action;
+import com.payroll.BaseClass.BaseClass;
 
 public class Listeners extends ExtentReport implements ITestListener
 {
@@ -30,19 +34,28 @@ public class Listeners extends ExtentReport implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult result) 
 	{
-		if (result.getStatus() == ITestResult.FAILURE) 
-		{
+		if (result.getStatus() == ITestResult.FAILURE) {
+		try {
 			test.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 			test.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
+		String imgPath = action.screenShot(BaseClass.getDriver(), result.getName());
+		
+			test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+		//e.printStackTrace();
 		}
+	}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSkipped(result);
+		if (result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, "Skipped Test case is: " + result.getName());
+		}
 	}
 
 	@Override

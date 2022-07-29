@@ -50,6 +50,9 @@ public class BankDetailsPage
 	@FindBy(xpath="//button[text()='Save']")
 	WebElement savebtn;
 	
+	@FindBy(xpath="//div[text()='Account Number cannot be blank.']")
+	WebElement accnmbralert;
+	
 	public WebElement Bcheckbx()
 	{
 		return Bcheckbx;
@@ -100,6 +103,12 @@ public class BankDetailsPage
 	public WebElement Bsave()
 	{
 		return savebtn;
+	}
+	
+	public String accNumAlertMsg()
+	{
+		String alert = accnmbralert.getText();
+		return alert;
 	}
 
 }

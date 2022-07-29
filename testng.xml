@@ -10,11 +10,14 @@
 	<parameter name="uname1" value="carol" />
 	<parameter name="pwd1" value="     " />
 
-	<test thread-count="5" name="Test">
+	<test thread-count="10" name="Test">
 		<classes>
-			  <class name="TestCases.LoginTest"/>
-     <!-- <class name="TestCases.WorkerTest"/> -->
-			<class name="TestCases.InvalidLoginTest" />
+			<class name="TestCases.LoginTest" />
+			<class name="TestCases.WorkerTest" />
+			<class name="TestCases.CreateWorkerTest" />
+			<class name="TestCases.DeductionTest" />
+			<class name="TestCases.AddDeductionTest" />
+			<class name="TestCases.BankDetailTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

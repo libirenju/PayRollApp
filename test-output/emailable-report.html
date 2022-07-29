@@ -8,11 +8,79 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,456</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">7</td><td class="num">0</td><td class="num">0</td><td class="num">78</td><td>Regression, Smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.LoginTest</td><td><a href="#m0">validLogin</a></td><td rowspan="1">1658289353713</td><td rowspan="1">3723</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestCases.AddDeductionTest</td><td><a href="#m0">first</a></td><td rowspan="1">1659121441089</td><td rowspan="1">-1659121441089</td></tr><tr class="failedodd"><td rowspan="1">TestCases.BankDetailTest</td><td><a href="#m1">first</a></td><td rowspan="1">1659121441100</td><td rowspan="1">-1659121441100</td></tr><tr class="failedeven"><td rowspan="1">TestCases.CreateWorkerTest</td><td><a href="#m2">first</a></td><td rowspan="1">1659121441058</td><td rowspan="1">-1659121441058</td></tr><tr class="failedodd"><td rowspan="1">TestCases.DeductionTest</td><td><a href="#m3">first</a></td><td rowspan="1">1659121441084</td><td rowspan="1">-1659121441084</td></tr><tr class="failedeven"><td rowspan="1">TestCases.WorkerTest</td><td><a href="#m4">first</a></td><td rowspan="1">1659121441080</td><td rowspan="1">-1659121441080</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">TestCases.AddDeductionTest</td><td><a href="#m5">close</a></td><td rowspan="2">1659121441093</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m6">close</a></td></tr><tr class="skippedeven"><td><a href="#m7">first</a></td><td rowspan="1">1659121441094</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">TestCases.BankDetailTest</td><td><a href="#m8">close</a></td><td rowspan="1">1659121441103</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="3">TestCases.CreateWorkerTest</td><td><a href="#m9">close</a></td><td rowspan="2">1659121441079</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m10">close</a></td></tr><tr class="skippedeven"><td><a href="#m11">first</a></td><td rowspan="1">1659121441075</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">TestCases.DeductionTest</td><td><a href="#m12">close</a></td><td rowspan="1">1659121441088</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">TestCases.WorkerTest</td><td><a href="#m13">close</a></td><td rowspan="1">1659121441083</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">TestCases.AddDeductionTest</td><td><a href="#m14">checkMandatoryFieldAlert</a></td><td rowspan="1">1659121441095</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m15">enterDeductionAllFields</a></td><td rowspan="1">1659121441091</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">TestCases.BankDetailTest</td><td><a href="#m16">bankMandatoryFields</a></td><td rowspan="1">1659121441101</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">TestCases.CreateWorkerTest</td><td><a href="#m17">createWorkerAllFields</a></td><td rowspan="1">1659121441067</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m18">createWorkerMandatoryFields</a></td><td rowspan="1">1659121441076</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">TestCases.DeductionTest</td><td><a href="#m19">viewDeductionDetails</a></td><td rowspan="1">1659121441086</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">TestCases.WorkerTest</td><td><a href="#m20">isSearchFilterWorking</a></td><td rowspan="1">1659121441081</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestCases.LoginTest#validLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestCases.AddDeductionTest#first</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.BankDetailTest#first</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.CreateWorkerTest#first</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.DeductionTest#first</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.WorkerTest#first</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.AddDeductionTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.AddDeductionTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.AddDeductionTest#first</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.BankDetailTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.CreateWorkerTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestCases.CreateWorkerTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestCases.CreateWorkerTest#first</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestCases.DeductionTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">TestCases.WorkerTest#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">TestCases.AddDeductionTest#checkMandatoryFieldAlert</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">TestCases.AddDeductionTest#enterDeductionAllFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">TestCases.BankDetailTest#bankMandatoryFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">TestCases.CreateWorkerTest#createWorkerAllFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">TestCases.CreateWorkerTest#createWorkerMandatoryFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">TestCases.DeductionTest#viewDeductionDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">TestCases.WorkerTest#isSearchFilterWorking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method first but has not been marked @Optional or defined
+in C:\Users\renph\git\PayRoll\PayRoll\Regression.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

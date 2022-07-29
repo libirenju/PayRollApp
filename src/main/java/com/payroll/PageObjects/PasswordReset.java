@@ -45,18 +45,27 @@ public class PasswordReset extends BaseClass
 	}
 	public WebElement Passlogo()
 	{
+		act.explicitWait(getDriver(), passlogo, 20);
 		return passlogo;
 	}
 	
 	public WebElement invalidmail()
 	{
+		//act.explicitWait(getDriver(), invalidemail, 20);
 		return invalidemail;
 	}
 	
-	public String passLogo()
+	public String passwordPageLogo()
 	{
 		String pwdlogo=Passlogo().getText();
 		return pwdlogo;
+	}
+	
+	public String isNotAValidEmailAlert()
+	{
+		act.explicitWait(getDriver(), invalidemail, 20);
+		String alert = invalidemail.getText();
+		return alert;
 	}
 	
 }

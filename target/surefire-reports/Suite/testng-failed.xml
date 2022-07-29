@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="pwd1" value="     "/>
   <parameter name="uname1" value="carol"/>
   <parameter name="uname" value="   "/>
@@ -8,7 +8,7 @@
   <listeners>
     <listener class-name="com.payroll.Utilities.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
       <class name="TestCases.LoginTest">
         <methods>

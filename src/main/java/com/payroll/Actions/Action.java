@@ -28,8 +28,8 @@ import com.payroll.BaseClass.BaseClass;
 import com.payroll.Actions.Action;
 
 
-public class Action extends BaseClass  {
-
+public class Action extends BaseClass 
+{
 
 	public void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
